@@ -210,7 +210,7 @@ footer {
 /* desktops, large screens */
 @media screen and (max-width: 1200px) {
     header {
-        background-image: url(/imgs/secondback.png);
+        background-image: url(../imgs/secondback.png);
         height: 800px;
         padding-top: 200px;
     }
