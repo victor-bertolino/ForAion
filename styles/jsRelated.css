@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .btnDisplay {
     visibility: visible;
     opacity: 1;
@@ -6,4 +7,14 @@
 .navMenu.mobileNavbar {
     background: rgba(0, 0, 0, 0.7);
     height: 300px;
+=======
+.btnDisplay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.navMenu.mobileNavbar {
+    background: rgba(0, 0, 0, 0.7);
+    height: 300px;
+>>>>>>> 054a18ea87852b3b9097075bb0c499979a5c9f68
 }

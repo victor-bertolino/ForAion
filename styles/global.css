@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 * {
@@ -88,4 +89,96 @@ span {
     html {
         font-size: 13px;
     }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 19px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: -3px;
+    padding-bottom: 3px;
+    color: white;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 4.5rem;
+    font-weight: 600;
+    letter-spacing: -3px;
+    line-height: 0.9;
+}
+
+h3 {
+    color: #ffffff;
+    font-size: 2.2rem;
+}
+
+h4 {
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+p {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+span {
+    color: rgb(87, 171, 255);
+}
+
+.upBtn {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    right: 50px;
+    bottom: 30px;
+    background-color: rgb(87, 171, 255);
+    border: 1px solid rgb(87, 171, 255);
+    padding: 0.4em 0.5em 0.2em 0.5em;
+    border-radius: 0.1em;
+    transition: all 0.3s;
+}
+
+.upBtn:hover {
+    cursor: pointer;
+    background-color: gray;
+    border-color: gray;
+}
+
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 498px) {
+    html {
+        font-size: 13px;
+    }
+>>>>>>> 054a18ea87852b3b9097075bb0c499979a5c9f68
 }
