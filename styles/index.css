@@ -1,14 +1,14 @@
 body {
     font-family: 'Open Sans', sans-serif;
     background: no-repeat fixed bottom;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(/imgs/midback.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../imgs/midback.jpg);
     background-size: cover;
     margin: 0;
 }
 
 header {
     background: no-repeat bottom;
-    background-image: url(/imgs/defaultback.png);
+    background-image: url(../imgs/defaultback.png);
     background-size: cover;
     height: 900px;
     padding-top: 250px;
