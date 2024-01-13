@@ -1,0 +1,115 @@
+nav {
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 65px;
+    position: fixed;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 3px black;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 4px 14px 4px 14px;
+}
+
+.navLogo {
+    letter-spacing: -2px;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    flex-shrink: 2;
+    padding: 0;
+}
+
+.navLogo a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: none;
+}
+
+.navMenu {
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.navMenu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.navMenu a {
+    transition: 0.3s;
+}
+
+.navMenu a:hover {
+    color: rgb(87, 171, 255);
+}
+
+.active {
+    color: rgb(87, 171, 255);
+    text-shadow: none;
+}
+
+@property --corInicial {
+    syntax: '<color>';
+    initial-value: rgb(32, 62, 92);
+    inherits: false;
+}
+
+@property --corFinal {
+    syntax: '<color>';
+    initial-value: rgb(87, 171, 255);
+    inherits: false;
+}
+
+.accountBtn {
+    background-image: linear-gradient(to right, var(--corInicial), var(--corFinal));
+    border: none;
+    border-radius: 0.4em;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5em 1.8em;
+    transition: --corInicial 0.8s, --corFinal 0.8s;
+}
+
+.accountBtn:hover {
+    cursor: pointer;
+    --corInicial: rgb(87, 171, 255);
+    --corFinal: rgb(32, 62, 92);
+}
+
+.accountBtnImg {
+    height: 0.8em;
+    padding-left: 0.5em;
+}
+
+.hamburgerMenu {
+    display: none;
+    margin: 1.5em 0;
+}
+
+.hamburgerMenu img {
+    width: 2em;
+}
+
+.hamburgerMenu img:hover {
+    cursor: pointer;
+}

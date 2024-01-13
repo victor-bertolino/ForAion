@@ -1,0 +1,145 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: no-repeat fixed center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(/imgs/wallhaven-nmdp3y.jpg);
+    background-size: cover;
+    margin: 0;
+    color: white;
+}
+
+section {
+    margin: 220px auto 0 auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.formContainer {
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    backdrop-filter: saturate(100%) blur(10px);
+    border-radius: 0.6em;
+    width: 500px;
+    height: 100%;
+    padding: 40px 50px;
+
+}
+
+.formContainer h2 {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 3em;
+    margin-top: 20px;
+}
+
+.formContainer .inputBox {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.inputBox input {
+    font-size: 1em;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgb(66, 66, 66);
+    border-radius: 40px;
+    padding: 22px 45px 20px 20px;
+}
+
+.inputBox input::placeholder {
+    color: rgb(66, 66, 66);
+}
+
+.inputBox img {
+    position: absolute;
+    right: 20px;
+    height: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.formContainer .rememberMe_forgotPassword {
+    display: flex;
+    justify-content: space-between;
+    font-size: .8em;
+    margin: -15px 0 15px;
+}
+
+.rememberMe_forgotPassword label input {
+    accent-color: #fff;
+    margin-right: 8px;
+}
+
+.rememberMe_forgotPassword a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.rememberMe_forgotPassword a:hover {
+    text-decoration: underline;
+}
+
+.formContainer .loginBtn {
+    width: 100%;
+    background: rgb(87, 171, 255);
+    color: white;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.3em;
+    font-weight: 800;
+    text-transform: capitalize;
+    letter-spacing: -1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.formContainer .loginBtn:hover {
+    transform: translateY(-0.10em);
+    box-shadow: 0 0.5em 0.5em -0.5em rgb(87, 171, 255);
+    border: 1px solid rgb(87, 171, 255);
+    background: transparent;
+}
+
+.formContainer .registerLink {
+    font-size: .8em;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.formContainer .registerLink p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.formContainer .registerLink p a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    .formContainer {
+        border-radius: 0px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .formContainer .rememberMe_forgotPassword {
+        flex-direction: column;
+    }
+
+    .formContainer .rememberMe_forgotPassword a {
+        margin-top: 14px;
+        align-self: flex-end;
+    }
+}

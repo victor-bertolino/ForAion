@@ -1,0 +1,9 @@
+.btnDisplay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.navMenu.mobileNavbar {
+    background: rgba(0, 0, 0, 0.7);
+    height: 300px;
+}
