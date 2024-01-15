@@ -251,6 +251,16 @@ footer {
     }
 
     section {
+        height: 1700px;
+    }
+
+    .discordInfos {
+        height: 1200px;
+    }
+}
+
+@media screen and (max-width: 805px) {
+    section {
         height: 2000px;
     }
 
