@@ -84,18 +84,19 @@ section {
 }
 
 .discordInfos {
-    height: 600px;
-    width: 100%;
     padding-left: 60px;
     padding-right: 60px;
+    text-align: center;
+}
+
+.sectionCard {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-content: space-around;
-    text-align: center;
 }
 
-.discordInfos div {
+.sectionCard div {
     backdrop-filter: saturate(100%) blur(40px);
     border: 1px solid rgb(87, 171, 255);
     border-radius: 9px;
@@ -103,7 +104,7 @@ section {
     margin: 20px;
 }
 
-.discordInfos img {
+.sectionCard div img {
     background-size: cover;
     border-radius: 8px;
     width: 340px;
@@ -112,16 +113,20 @@ section {
     margin-right: auto;
 }
 
-.discordInfos h3 {
+.sectionCard h3 {
     color: rgb(87, 171, 255);
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
-.discordInfos p {
+.sectionCard p {
     padding: 0px 20px 10px 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.sectionCard_mobile {
+    display: none;
 }
 
 footer {
@@ -197,12 +202,8 @@ footer {
 }
 
 /* height adjustment */
-@media screen and (max-width: 1280px) {
-    section {
-        height: 1600px;
-    }
-
-    .discordInfos {
+@media screen and (max-width: 1265px) {
+    .sectionCard {
         height: 1100px;
     }
 }
@@ -219,11 +220,11 @@ footer {
         text-align: center;
     }
 
-    .discordInfos div {
+    .sectionCard div {
         width: 322px;
     }
 
-    .discordInfos img {
+    .sectionCard div img {
         width: 320px;
         height: 245px;
     }
@@ -235,11 +236,11 @@ footer {
         max-width: 690px;
     }
 
-    .discordInfos div {
+    .sectionCard div {
         width: 302px;
     }
 
-    .discordInfos img {
+    .sectionCard div img {
         width: 300px;
         height: 235px;
     }
@@ -250,22 +251,10 @@ footer {
         padding: 0.2em 3.5em;
     }
 
-    section {
-        height: 1700px;
-    }
-
-    .discordInfos {
-        height: 1200px;
-    }
-}
-
-@media screen and (max-width: 805px) {
-    section {
-        height: 2000px;
-    }
-
-    .discordInfos {
-        height: 1500px;
+    .sectionCard {
+        height: 500px;
+        flex-direction: column;
+        justify-content: flex-end;
     }
 }
 
@@ -282,15 +271,6 @@ footer {
 
     #mainBtn {
         padding: 0.1em 2.3em;
-    }
-
-    .discordInfos div {
-        width: 292px;
-    }
-
-    .discordInfos img {
-        width: 290px;
-        height: 225px;
     }
 }
 
@@ -315,35 +295,6 @@ footer {
 
     #mainBtn {
         padding: 0.1em 1.1em;
-    }
-
-    section {
-        height: 1650px;
-
-    }
-
-    .discordTxt {
-        margin-bottom: 50px;
-    }
-
-    .discordInfos {
-        height: 1225px;
-        flex-flow: column nowrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .discordInfos div {
-        width: 242px;
-    }
-
-    .discordInfos img {
-        width: 240px;
-        height: 195px;
-    }
-
-    .sectionBtn a {
-        padding: 14px 50px;
     }
 
     .container {
