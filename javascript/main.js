@@ -1,4 +1,4 @@
-// funtion to use in a scroll down event
+//function to use a scroll down event
 function scrollDownAction(newVar, CSSelement, comparedValue, newCSSelement) {
     newVar = document.querySelector(CSSelement);
     const scrollValue = window.scrollY;
@@ -9,12 +9,12 @@ function scrollDownAction(newVar, CSSelement, comparedValue, newCSSelement) {
         newVar.classList.remove(newCSSelement)
 }
 
-// toggle button that return to top, when user scroll
+//to top button appears when scroll down
 window.addEventListener('scroll', () => {
     scrollDownAction('upBtn', '.upBtn', 110, 'btnDisplay')
 })
 
-// return to top button
+//to top button functionality
 const upBtn = document.querySelector('.upBtn')
 upBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -27,19 +27,19 @@ hamburgerMenu.addEventListener('click', () => {
     navMenu.classList.toggle('mobileNavbar')
 })
 
-//carousel
+//getting carousel elements
 const firstCircle = document.querySelector('.firstCircle')
-const secondCircle = document.querySelector('.secondCircle')
-const thirdCircle = document.querySelector('.thirdCircle')
-
 const firstCard = document.querySelector('.firstCard')
+const secondCircle = document.querySelector('.secondCircle')
 const secondCard = document.querySelector('.secondCard')
+const thirdCircle = document.querySelector('.thirdCircle')
 const thirdCard = document.querySelector('.thirdCard')
 
-////initial state
+////default state
 firstCircle.classList.add('selectedCircle')
 firstCard.classList.add('addCardDisplay')
 
+////function to add and remove itens from mobile card section accordinly whats clicked
 function sectionCard_mobile_navigation(addedCircle, addedCard, removedCircleOne, removedCardOne, removedCircleTwo, removedCardTwo) {
     addedCircle.classList.add('selectedCircle')
     addedCard.classList.add('addCardDisplay')
@@ -49,7 +49,7 @@ function sectionCard_mobile_navigation(addedCircle, addedCard, removedCircleOne,
     removedCardTwo.classList.remove('addCardDisplay')
 }
 
-////changes when click
+////action to happen in each case
 firstCircle.addEventListener('click', () => {
     sectionCard_mobile_navigation(firstCircle, firstCard, secondCircle, secondCard, thirdCircle, thirdCard)
 })
