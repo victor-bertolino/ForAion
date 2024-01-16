@@ -60,6 +60,11 @@ nav a {
     color: rgb(87, 171, 255);
 }
 
+.navMenu.mobileNavbar {
+    background: rgba(0, 0, 0, 0.7);
+    height: 300px;
+}
+
 .active {
     color: rgb(87, 171, 255);
     text-shadow: none;
