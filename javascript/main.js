@@ -9,7 +9,7 @@ function scrollDownAction(newVar, CSSelement, comparedValue, newCSSelement) {
         newVar.classList.remove(newCSSelement)
 }
 
-//to top button appears when scroll down
+//to top button appears when scrolling down
 window.addEventListener('scroll', () => {
     scrollDownAction('upBtn', '.upBtn', 110, 'btnDisplay')
 })
