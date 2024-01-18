@@ -297,6 +297,17 @@ footer {
         padding: 0.1em 1.1em;
     }
 
+    .sectionCard {
+        height: 400px;
+    }
+
+    .sectionCard div,
+    .sectionCard div img {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+
     .container {
         flex-flow: column wrap;
         text-align: center;

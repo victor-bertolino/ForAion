@@ -90,7 +90,12 @@ span {
 }
 
 @media screen and (max-width: 498px) {
+
     html {
-        font-size: 13px;
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 4rem;
     }
 }
