@@ -9,7 +9,7 @@
     <meta name="keywords"
         content="Aion, Aion Online, Aion Private Server, Aion Server, Aion Private, ForAion, ForAion Login">
     <link rel="stylesheet" href="styles/global.css">
-    <link rel="stylesheet" href="styles/login.css">
+    <link rel="stylesheet" href="styles/login_register.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/mobile_nav.css">
     <title>ForAion - Login</title>
@@ -37,7 +37,7 @@
 
 
     <section>
-        <div class="formContainer">
+        <div id="loginForm" class="formContainer">
             <form action="">
                 <h2>login</h2>
                 <div class="inputBox">
@@ -54,10 +54,42 @@
                     <a href="#">Forgot password?</a>
                 </div>
 
-                <button type="submit" class="loginBtn">login</button>
+                <button type="submit" class="login_registerBtn">login</button>
 
                 <div class="registerLink">
-                    <p>Don't have an account? <a href="register.html">Register</a></p>
+                    <p>Don't have an account? <a href="#" class="toRegisterBtn">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div id="registerForm" class="formContainer">
+            <form action="">
+                <h2>register</h2>
+                <div class="inputBox">
+                    <input type="text" placeholder="Username" required>
+                    <img src="icons/userGray.svg" alt="user icon">
+                </div>
+                <div class="inputBox">
+                    <input type="text" placeholder="Email" required>
+                    <img src="icons/mail.svg" alt="mail icon">
+                </div>
+                <div class="inputBox">
+                    <input type="password" placeholder="Password" required>
+                    <img src="icons/lock.svg" alt="lock icon">
+                </div>
+                <div class="inputBox">
+                    <input type="password" placeholder="Confirm Password" required>
+                    <img src="icons/lock.svg" alt="lock icon">
+                </div>
+
+                <div class="rememberMe_forgotPassword">
+                    <label><input type="checkbox" required>I agree with term & conditions</label>
+                </div>
+
+                <button type="submit" class="login_registerBtn">register</button>
+
+                <div class="registerLink">
+                    <p>Already have an account? <a href="#" class="toLoginBtn">Login</a></p>
                 </div>
             </form>
         </div>
@@ -66,6 +98,7 @@
     <button class="upBtn"><img src="icons/arrow-up-fill.svg" alt="up arrow"></button>
 
     <script src="javascript/main.js"></script>
+    <script src="javascript/login_register.js"></script>
 </body>
 
 </html>

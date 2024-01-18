@@ -10,8 +10,8 @@ const thirdCard = document.querySelector('.thirdCard')
 firstCircle.classList.add('selectedCircle')
 firstCard.classList.add('addCardDisplay')
 
-////function to add and remove items from mobile card section accordinly with whats clicked
-function sectionCard_mobile_navigation(addedCircle, addedCard, removedCircleOne, removedCardOne, removedCircleTwo, removedCardTwo) {
+////arrow function to add and remove items from mobile card section accordinly with whats clicked
+const sectionCard_mobile_navigation = (addedCircle, addedCard, removedCircleOne, removedCardOne, removedCircleTwo, removedCardTwo) => {
     addedCircle.classList.add('selectedCircle')
     addedCard.classList.add('addCardDisplay')
     removedCircleOne.classList.remove('selectedCircle')
