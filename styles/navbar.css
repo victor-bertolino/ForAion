@@ -70,20 +70,8 @@ nav a {
     text-shadow: none;
 }
 
-@property --corInicial {
-    syntax: '<color>';
-    initial-value: rgb(32, 62, 92);
-    inherits: false;
-}
-
-@property --corFinal {
-    syntax: '<color>';
-    initial-value: rgb(87, 171, 255);
-    inherits: false;
-}
-
 .accountBtn {
-    background-image: linear-gradient(to right, var(--corInicial), var(--corFinal));
+    background-color: rgb(87, 171, 255);
     border: none;
     border-radius: 0.4em;
     color: white;
@@ -92,13 +80,12 @@ nav a {
     font-weight: bold;
     text-transform: uppercase;
     padding: 0.5em 1.8em;
-    transition: --corInicial 0.8s, --corFinal 0.8s;
+    transition: .25s;
 }
 
 .accountBtn:hover {
     cursor: pointer;
-    --corInicial: rgb(87, 171, 255);
-    --corFinal: rgb(32, 62, 92);
+    background-color: rgb(51, 136, 220);
 }
 
 .accountBtnImg {
